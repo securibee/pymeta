@@ -217,9 +217,9 @@ def domain_handler(pymeta, output_dir, filename, search, max_results, domain):
     pymeta.download_files(pymeta.links, output_dir)
     dir_handler(pymeta, output_dir, report_file)
 
-def dir_handler(pymeta, input_dir, report_file):
-    print("[*] Extracting Metadata...".format(input_dir))
-    pymeta.create_csv(input_dir, report_file)
+def dir_handler(pymeta, output_dir, report_file):
+    print("[*] Extracting Metadata...".format(output_dir))
+    pymeta.create_csv(output_dir, report_file)
     print("[+] Report complete: {}".format(report_file))
 
 ######################################
